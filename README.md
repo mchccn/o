@@ -36,7 +36,7 @@ Though this library does not really go well with TypeScript, it does in fact wor
 No more headaches over what argument is what. It's just separate functions now that you can manage easily.
 
 ```js
-const overload = require("@cursorsdottsx/o");
+const overload = require("@cursorsdottsx/o").default;
 
 const overloaded = overload({
     ["string number? object"](str, num) {
