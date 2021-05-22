@@ -36,7 +36,7 @@ Though this library does not really go well with TypeScript, it does in fact wor
 No more headaches over what argument is what. It's just separate functions now that you can manage easily.
 
 ```js
-require("@cursorsdottsx/o");
+const overload = require("@cursorsdottsx/o");
 
 const overloaded = overload({
     ["string number? object"](str, num) {
@@ -47,9 +47,9 @@ const overloaded = overload({
     },
 });
 
-overloaded("hello world", 420, {});  // => "callback 1 executed"
+overloaded("hello world", 420, {}); // => "callback 1 executed"
 overloaded("hello world", true, 69); // => "callback 2 executed"
-overloaded("hello world", {});       // !! No overload matches this call.
+overloaded("hello world", {}); // !! No overload matches this call.
 ```
 
 Overloads follow a simple syntax, and there are currently on 4 supported types, all of which can be nullable:
