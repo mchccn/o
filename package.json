@@ -1,6 +1,6 @@
 {
   "name": "@cursorsdottsx/o",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Overloading was always a bit confusing (don't even get me started on TypeScript overloads), but never to fear, this library is here.",
   "main": "index.js",
   "scripts": {
